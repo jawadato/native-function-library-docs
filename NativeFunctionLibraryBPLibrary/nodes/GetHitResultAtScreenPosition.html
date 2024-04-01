@@ -1,6 +1,6 @@
 <html xmlns="http://www.w3.org/TR/REC-html40">
   <head>
-    <title>Sort Vectors by Distance</title>
+    <title>Get Hit Result at Screen Position</title>
     <link rel="stylesheet" type="text/css" href="../../css/bpdoc.css" />
   </head>
   <body>
@@ -9,10 +9,10 @@
       <a class="navbar_style">&gt;</a>
       <a class="navbar_style" href="../NativeFunctionLibraryBPLibrary.html">Native Function Library BPLibrary</a>
       <a class="navbar_style">&gt;</a>
-      <a class="navbar_style">Sort Vectors by Distance</a>
-      <h1 class="title_style">Sort Vectors by Distance</h1>
-      <p>Sorts an array of vectors relative to distance to the provided location vector from closest to furthest.</p>
-      <img src="../img/nd_img_SortVectorsByDistance.png" />
+      <a class="navbar_style">Get Hit Result at Screen Position</a>
+      <h1 class="title_style">Get Hit Result at Screen Position</h1>
+      <p>Does a collision query at the provided position on the screen.</p>
+      <img src="../img/nd_img_GetHitResultAtScreenPosition.png" />
       <h3 class="title_style">Inputs</h3>
       <table>
         <colgroup>
@@ -22,29 +22,38 @@
         <tbody>
           <tr>
             <td>
-              <div class="param_name title_style">In</div>
-              <div class="param_type">Exec</div>
+              <div class="param_name title_style">Player Controller</div>
+              <div class="param_type">Player Controller Object Reference</div>
             </td>
             <td>
-              <p />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="param_name title_style">Relative To</div>
-              <div class="param_type">Vector</div>
-            </td>
-            <td>
-              <p>Location to sort against</p>
+              <p>Player Controller to use</p>
             </td>
           </tr>
           <tr>
             <td>
-              <div class="param_name title_style">Array</div>
-              <div class="param_type">Array of Vectors</div>
+              <div class="param_name title_style">Screen Position</div>
+              <div class="param_type">Vector 2D Structure</div>
             </td>
             <td>
-              <p>Array to sort</p>
+              <p>Screen position to trace at</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Trace Channel</div>
+              <div class="param_type">ETraceTypeQuery Enum</div>
+            </td>
+            <td>
+              <p>Trace collision channel to use</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Trace Complex</div>
+              <div class="param_type">Boolean</div>
+            </td>
+            <td>
+              <p>Should trace complex collision</p>
             </td>
           </tr>
         </tbody>
@@ -58,20 +67,20 @@
         <tbody>
           <tr>
             <td>
-              <div class="param_name title_style">Out</div>
-              <div class="param_type">Exec</div>
+              <div class="param_name title_style">Hit Result</div>
+              <div class="param_type">Hit Result Structure</div>
             </td>
             <td>
-              <p />
+              <p>Result of trace</p>
             </td>
           </tr>
           <tr>
             <td>
               <div class="param_name title_style">Return Value</div>
-              <div class="param_type">Array of Vectors</div>
+              <div class="param_type">Boolean</div>
             </td>
             <td>
-              <p>Sorted Array from closest to furthest</p>
+              <p>True or false depending on hit</p>
             </td>
           </tr>
         </tbody>
