@@ -1,6 +1,6 @@
 <html xmlns="http://www.w3.org/TR/REC-html40">
   <head>
-    <title>File to String</title>
+    <title>Location on Screen</title>
     <link rel="stylesheet" type="text/css" href="../../css/bpdoc.css" />
   </head>
   <body>
@@ -9,10 +9,10 @@
       <a class="navbar_style">&gt;</a>
       <a class="navbar_style" href="../NativeFunctionLibraryBPLibrary.html">Native Function Library BPLibrary</a>
       <a class="navbar_style">&gt;</a>
-      <a class="navbar_style">File to String</a>
-      <h1 class="title_style">File to String</h1>
-      <p>Loads provided File into a String.</p>
-      <img src="../img/nd_img_FileToString.png" />
+      <a class="navbar_style">Location on Screen</a>
+      <h1 class="title_style">Location on Screen</h1>
+      <p>Determines if provided location Vector is currently on screen relative to player camera.</p>
+      <img src="../img/nd_img_LocationOnScreen.png" />
       <h3 class="title_style">Inputs</h3>
       <table>
         <colgroup>
@@ -22,20 +22,20 @@
         <tbody>
           <tr>
             <td>
-              <div class="param_name title_style">In</div>
-              <div class="param_type">Exec</div>
+              <div class="param_name title_style">Player Controller</div>
+              <div class="param_type">Player Controller Object Reference</div>
             </td>
             <td>
-              <p />
+              <p>Player Controller which to query against</p>
             </td>
           </tr>
           <tr>
             <td>
-              <div class="param_name title_style">Filename</div>
-              <div class="param_type">String</div>
+              <div class="param_name title_style">Location</div>
+              <div class="param_type">Vector</div>
             </td>
             <td>
-              <p>File path to use</p>
+              <p>Location to query</p>
             </td>
           </tr>
         </tbody>
@@ -49,29 +49,11 @@
         <tbody>
           <tr>
             <td>
-              <div class="param_name title_style">Out</div>
-              <div class="param_type">Exec</div>
-            </td>
-            <td>
-              <p />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="param_name title_style">String</div>
-              <div class="param_type">String</div>
-            </td>
-            <td>
-              <p>Loaded String</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
               <div class="param_name title_style">Return Value</div>
               <div class="param_type">Boolean</div>
             </td>
             <td>
-              <p>Result of read operation</p>
+              <p>True or false based on query result</p>
             </td>
           </tr>
         </tbody>
